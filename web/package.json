@@ -1,0 +1,17 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "docker-build": "docker build -t gandolfo/dog_web .",
+    "docker-run": "docker run -e HOST=localhost -d -p 3000:3000 gandolfo/dog_web:latest"
+  },
+  "dependencies": {
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
